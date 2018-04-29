@@ -2,6 +2,7 @@
 
 """Test Driver for Animator"""
 
+from pathlib import Path
 import numpy as np
 from ash3d_animator import Animator, BasemapSettings
 
@@ -37,7 +38,7 @@ class Tester(object):
             projection="cyl",
             resolution="l"
         )
-        self.filename = "afoo.gif"
+        self.filename = Path("/home/puskarm/Ash3D/afoo.gif")
 
     def run(self):
         """Run the tester"""
